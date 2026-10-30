@@ -1,0 +1,19 @@
+[project]
+name = "day4-apiclient"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["httpx", "pydantic"]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+    "pytest",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 99
